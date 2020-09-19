@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>External Style</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div class="container">
+<header class="header">
+	<div class="logo">
+ 		<img src="undiksha.png" width="100">
+	</div>
+	<nav class="nav">
+		<h1>Selamat Datang</h1>
+      	<h4>Sistem Informasi Pendataan Karyawan</h4>
+ 	<ul>
+ 		<li><a href="#profile">Profile</a></li>
+ 		<li><a href="#logout">Logout</a></li>
+ 	</ul>
+	</nav>
+</header>
+	<div class="wrapper">
+<aside class="sidebar">
+ 	<div style="padding: 10px;">
+ 	<b>Menu</b><br>
+ 	<hr>
+		<a href="#">Home</a><br />
+		<a href="#">Biodata</a><br />
+		<a href="#">Update Biodata</a><br />
+		<a href="#">Contact</a><br />
+ 	</div>
+</aside>
+
+		<main class="content">
+		<div style="padding: 10px;">
+	<h2 style="margin: 0px;">Update Biodata Karyawan</h2>
+	<hr/>
+<form action=" formulir.php" method="post" onSubmit="return ValidasiForm()" name="Fo
+rmReg">
+	<table>
+		<tr>
+			<td>Nama</td>
+			<td>:</td>
+			<td><input type="text" name="nama" value="" placeholder="Tuliskan Nama Anda"><br>
+			<small style="color: red" id="err_nama"></small></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>:</td>
+			<td><input type="password" name="password" value="" placeholder="Tuliskan Password Anda"></td>
+			<small style="color: red" id="err_password"></small>
+		</tr>
+		<tr>
+			<td>Jenis Kelamin</td>
+			<td>:</td>
+			<td><input type="radio" name="jenis_kelamin" value="laki-laki"/> Laki - Laki
+			<input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan <br><small style="color: red" id="err_jenis_kelamin"></small></td>
+		</tr>
+		<tr>
+			<td>Hobi</td>
+			<td>:</td>
+			<td><input type="checkbox" name="hobi_baca"> Membaca Buku
+			<input type="checkbox" name="hobi_nulis"> Menulis
+			<input type="checkbox" name="hobi_mancing"> Memancing<br>
+			<input type="checkbox" name="hobi_renang"> Berenang
+			<input type="checkbox" name="hobi_gambar"> Menggambar
+			<input type="checkbox" name="hobi_basket"> Bermain Basket<br>
+			<input type="checkbox" name="hobi_game"> Bermain Game
+			<input type="checkbox" name="hobi_sepeda"> Bersepeda
+			<input type="checkbox" name="hobi_masak">Memasak <br>
+		<small style="color: red" id="err_hobi"></small></td>
+
+		</tr>
+		<tr>
+			<td>Asal</td>
+			<td>:</td>
+			<td>
+			<select name="asal_kabupaten">
+			<option value="Kabupaten" selected>- Kabupaten -</option>
+			<option value="Kabupaten Badung">Badung</option>
+			<option value="Kabupaten Bangli">Bangli</option>
+			<option value="Kabupaten Buleleng">Buleleng</option>
+			<option value="Kabupaten Gianyar">Gianyar</option>
+			<option value="Kabupaten Jembrana">Jembrana</option>
+			</select>
+			<select name="asal_kecamatan">
+			<option value="Kecamatan" selected>- Kecamatan -</option>
+			<option value="Kecamatan Ambiansemal">Ambiansemal</option>
+			<option value="Kecamatan Mengwi">Mengwi</option>
+			<option value="Kecamatan Buleleng">Buleleng</option>
+			<option value="Kecamatan Kubutambahan">Kubutambahan</option>
+			</select>
+			<select name="asal_kota">
+			<option value="Kota" selected>- Kota -</option>
+			<option value="Kota Denpasar">Denpasar</option>
+			<option value="Kota Singaraja">Singaraja</option>
+			<option value="Kota Amlapura">Amlapura</option>
+			<option value="Kota Semapuras">Semapura</option>
+			</select></td>
+		</tr>
+		<tr>
+			<td>Komentar</td>
+			<td>:</td>
+			<td><textarea name="komentar" rows="5" cols="40"></textarea></td>
+		</tr>
+		<tr>
+			<td colspan="3" align="right"><input type="submit" value="Simpan">
+			<input type="reset" value="Reset"></td>
+		</tr>
+	</table>
+</form>
+</div>
+</main>
+</div>
+	<footer class="footer">
+		<font color="white">Copyright &#169; Angga Wahyu</white>
+	</footer>
+</div>
+</body>
+</html>
